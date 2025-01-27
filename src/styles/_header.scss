@@ -1,0 +1,26 @@
+.header {
+  &__container {
+    padding: 8px 36px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-width: 150px;
+    width: 100%;
+  }
+
+  &__links {
+    display: flex;
+    &__item {
+      margin-left: 15px;
+      list-style: none;
+      text-decoration: none;
+    }
+  }
+
+  .button {
+    height: 50px;
+  }
+}

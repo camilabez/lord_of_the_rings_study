@@ -1,5 +1,69 @@
-$bgColor: rgb(11, 104, 91);
+@use "variaveis";
+@use "hero";
+@use "footer";
+@use "header";
+@use "filmes";
+@use "detalhes";
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
 
 body {
-  background-color: $bgColor;
+  background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 20px) {
+  font-size: $fontSize;
+  line-height: $fontSize + 4px;
+  color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 16px) {
+  @include text($fontSize);
+  line-height: $fontSize + 4px;
+  color: variaveis.$corTextoPrincipal;
+}
+
+.text {
+  @include text;
+}
+
+.text--small {
+  @include text(16px);
+}
+
+.title--big {
+  @include text(32px);
+}
+
+.title--regular {
+  @include text(24px);
+}
+
+.title--small {
+  @include text(28px);
+}
+
+.text-home {
+  @include text(24px);
+  color: variaveis.$corTextoSecundario;
+  text-decoration: none;
 }

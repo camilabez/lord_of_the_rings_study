@@ -1,0 +1,40 @@
+@use "variaveis";
+
+.detalhes {
+  padding: 2vw 5.6vw;
+  min-height: 50vh;
+
+  &__content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: none;
+
+    p {
+      max-width: 1024px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__info {
+      display: flex;
+      margin-bottom: 16px;
+      margin-left: 16px;
+      padding-top: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__item {
+        display: inline-block;
+        margin-left: 30px;
+
+        p {
+          display: block;
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+}

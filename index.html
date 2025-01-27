@@ -6,8 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lord of the Rings</title>
     <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Olá</h1>
+    <header>
+      <div class="header__container">
+        <h1>
+          <img
+            class="header__logo"
+            src="./dist/images/The_Lord_of_the_Rings_logo.png"
+            alt="Lord of The Rings"
+          />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a href="#home" class="button button--home text-home">Home</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#filmes" class="button button--home text-home">Filmes</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#end" class="button button--home text-home">End</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero__content"></div>
+    </section>
+
+    <section class="detalhes">
+      <div class="detalhes__content">
+        <hr />
+        <br />
+        <h1 class="title--regular">Detalhes</h1>
+        <br />
+        <p class="text">
+          Inspirado nos livros de J. R. R. Tolkien, a triologia do O Senhor dos
+          Anéis de 2001, dirigida por Peter Jackson, conta a história de Frodo e
+          a luta dos homens e elfos contra Sauron, o criador dos anéis de poder.
+          Frodo encontra um caminho árduo e perigoso pela frente em sua jornada,
+          mas com a ajuda de seus companheiros e a Sociedade do Anel, busca
+          destruir o anel de poder e salvar a Terra Média.
+        </p>
+
+        <div class="detalhes__content__info">
+          <ul>
+            <li class="detalhes__content__info__item text">
+              Gênero
+              <p class="text">Aventura, Fantasia</p>
+            </li>
+            <li class="detalhes__content__info__item text">
+              Direção
+              <p class="text">Peter Jackson</p>
+            </li>
+            <li class="detalhes__content__info__item text">
+              Roteiro
+              <p class="text">Peter Jackson, Fran Walsh, Philippa Boyens</p>
+            </li>
+            <li class="detalhes__content__info__item text">
+              Gênero
+              <p class="text">Aventura, Fantasia</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <section id="filmes" class="filmes">
+      <nav class="filmes__tabs">
+        <button
+          data-tab-button="sociedade_anel"
+          class="filmes__tabs__button filmes__tabs__button--is-active"
+        >
+          A Sociedade do Anel
+        </button>
+        <button data-tab-button="duas_torres" class="filmes__tabs__button">
+          As Duas Torres
+        </button>
+        <button data-tab-button="retorno_rei" class="filmes__tabs__button">
+          O Retorno do Rei
+        </button>
+      </nav>
+
+      <div
+        data-tab-id="sociedade_anel"
+        class="filmes__list filmes__list--is-active"
+      >
+        <div class="filmes__list__item">
+          <img
+            src="./dist/images/the_fellowship_of_the_ring_movie.jpg"
+            alt="A sociedade do anel"
+          />
+        </div>
+        <div class="filmes__list__item">
+          <p class="text">
+            Em uma terra fantástica e única, um hobbit recebe de presente de seu
+            tio um anel mágico e maligno que precisa ser destruído antes que
+            caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo
+            pela frente, onde encontra perigo, medo e seres bizarros. Ao seu
+            lado para o cumprimento desta jornada, ele aos poucos pode contar
+            com outros hobbits, um elfo, um anão, dois humanos e um mago,
+            totalizando nove seres que formam a Sociedade do Anel.
+          </p>
+          <br />
+          <h3 class="text--small">2h 56min | 1 de janeiro de 2002</h3>
+        </div>
+      </div>
+
+      <div data-tab-id="duas_torres" class="filmes__list">
+        <div class="filmes__list__item">
+          <img
+            src="./dist/images/the_two_towers_movie.png"
+            alt="As Duas Torres"
+          />
+        </div>
+        <div class="filmes__list__item">
+          <p class="text">
+            Após a captura de Merry (Dominic Monaghan) e Pippy (Billy Boyd)
+            pelos orcs, a Sociedade do Anel é dissolvida. Enquanto que Frodo
+            (Elijah Wood) e Sam (Sean Astin) seguem sua jornada rumo à Montanha
+            da Perdição para destruir o Um Anel, Aragorn (Viggo Mortensen),
+            Legolas (Orlando Bloom) e Gimli (John Rhys-Davies) partem para
+            resgatar os hobbits sequestrados.
+          </p>
+          <br />
+          <h3 class="text--small">2h 59min | 27 de dezembro de 2002</h3>
+        </div>
+      </div>
+
+      <div data-tab-id="retorno_rei" class="filmes__list">
+        <div class="filmes__list__item">
+          <img
+            src="./dist/images/the_return_of_the_king_movie.jpg"
+            alt="Retorno do Rei"
+          />
+        </div>
+        <div class="filmes__list__item">
+          <p class="text">
+            Sauron planeja um grande ataque a Minas Tirith, capital de Gondor, o
+            que faz com que Gandalf (Ian McKellen) e Pippin (Billy Boyd) partam
+            para o local na intenção de ajudar a resistência. Um exército é
+            reunido por Theoden (Bernard Hill) em Rohan, em mais uma tentativa
+            de deter as forças de Sauron. Enquanto isso Frodo (Elijah Wood), Sam
+            (Sean Astin) e Gollum (Andy Serkins) seguem sua viagem rumo à
+            Montanha da Perdição, para destruir o Um Anel.
+          </p>
+          <br />
+          <h3 class="text--small">3h 21min | 25 de dezembro de 2003</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer id="end" class="footer">
+      <div class="footer__container">
+        <img
+          class="footer__logo"
+          src="./dist/images/The_Lord_of_the_Rings_logo.png"
+          alt="Lord of the Rings"
+        />
+        <ul class="footer__links">
+          <li class="footer__links__item">
+            <div class="language-selector">
+              <img src="./dist/images/globe.svg" alt="globo mundial" />
+              <select>
+                <option>English</option>
+                <option selected>Português</option>
+              </select>
+            </div>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Termos e Condições de Uso</a>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Política de privacidade</a>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+          </li>
+        </ul>
+        <p class="text--small">
+          Este é um projeto acadêmico para fins de estudo em desenvolvimento
+          front-end e programação de sites, não possui nenhuma afiliação com a
+          Warner Bros, HBO ou qualquer outra produtora ou responsável pelos
+          direitos autorais e de transmissão da obra de J.R.R.Tolkien e pelos
+          filmes, assim como não possui nenhum fim comercial ou monetização e
+          ganhos financeiros.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./src/main.js"></script>
   </body>
 </html>
